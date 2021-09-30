@@ -12,7 +12,11 @@
   	<link href="CSS/css/mdb.min.css" rel="stylesheet">
   	<link href="styles/main.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
 	<link rel="stylesheet" type="text/css" href="CSS/main.css">
 
 
@@ -20,12 +24,15 @@
 	<style type="text/css">
 	
 	@font-face {font-family: file1 ; src: url('./Fonts/ChargeVectorBold.otf');}
+	@font-face {font-family: quantum ; src: url('./Fonts/Quantum.otf');}
+
+
 	</style>
 
 	<title>Navriti</title>
 
 </head>
-<body id ="top">
+<body id ="main">
 <header >
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
       <div class="container"><a class="navbar-brand" href="#"><strong><img src="./Images/IIC.png" height="70px">
@@ -35,7 +42,7 @@
             class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link active" href="#about">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#main">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#article">Articles</a></li>
             <li class="nav-item"><a class="nav-link" href="#interview">Interviews</a></li>
             <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
@@ -54,7 +61,7 @@
 </header>
 
 
-<section id ="#article" class="article_main" style="position:relative;">
+<section id ="article" class="article_main" style="position:relative;">
 	<img src="./Images/small_long_vector+background.png" alt="Main page" style="width: 100%; height:auto;">
 
 <div class="mt-8 container-fluid" style="position: absolute; top: 0px; margin-top: 140px">
@@ -81,7 +88,7 @@
 
 </section>
 
-<section  id ="#interview" class="article_main " style="position:relative;">
+<section  id ="interview" class="article_main " style="position:relative;">
 	<img src="./Images/small_long_vector+background.png" alt="Main page" style="width: 100%; height:auto;">
 
 <div class="mt-8 container-fluid" style="position: absolute; top: 0px; margin-top: 140px">
@@ -109,20 +116,69 @@
 		<img src="Images/small_right.png" style="width: 300px;height:auto">
 		<h6 style="font-family: 'file1'; color: white; position: absolute; top:60px" class="">Mechanical Ventilator</h6>
 		</a>	</div>
-
-	
-	
-
 </div>
+
+<br><br>
+
+<div class="row">
+	<div class="col-md-4 col-lg-4 col-centered float-center wow fadeInLeft" data-wow-delay=".3s">
+		<a class=" d-flex justify-content-center"  style="position: relative" href="https://www.w3schools.com/bootstrap5/bootstrap_popover.php">
+		<img src="Images/small_left.png" style="width: 300px;height:auto">
+		<h6 style="font-family: 'file1'; color: white; position: absolute; top:60px" class="">Mechanical Ventilator</h6>
+		</a>
+
+	</div>
+	<div class="col-md-4 col-lg-4 col-centered float-center wow fadeInUp" data-wow-delay=".3s">
+		
+		<a class=" d-flex justify-content-center"  style="position: relative" href="https://www.w3schools.com/bootstrap5/bootstrap_popover.php">
+		<img src="Images/small_middle.png" style="width: 300px;height:auto">
+		<h6 style="font-family: 'file1'; color: white; position: absolute; top:60px" class="">Mechanical Ventilator</h6>
+		</a>
+	</div>
+	<div class="col-md-4 col-lg-4 col-centered wow fadeInRight" data-wow-delay=".3s">
+		
+	<a class=" d-flex justify-content-center"  style="position: relative" href="https://www.w3schools.com/bootstrap5/bootstrap_popover.php">
+		<img src="Images/small_right.png" style="width: 300px;height:auto">
+		<h6 style="font-family: 'file1'; color: white; position: absolute; top:60px" class="">Mechanical Ventilator</h6>
+		</a>	</div>
+</div>
+
 </div>
 </div>
 
 </section>
 
+<section id="team" class="meet_team">
+<img src="./Images/meetteam.png" alt="MeetTeam" style="width: 100%; height:auto;">	
 
 
+</section>
 
 
+<footer class="page-footer black darken-2 center-on-small-only pt-0 mt-0" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mb-5 flex-center">
+            <a class="px-3"><a href="https://m.facebook.com" target="_blank">
+                <i class="fa fa-facebook fa-2x white-text"></i></a></a>
+          
+
+            <a class="px-3"><a href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-instagram fa-2x white-text"></i></a></a>
+            <a class="px-3"><a href="https://www.linkedin.com/" target="_blank">
+                <i class="fa fa-linkedin fa-2x white-text "></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container-fluid">
+        <p>&copy; <a href="/"> Copyrights reserved by E-Cell IIT GOA</a>
+        </p>
+      </div>
+    </div>
+  </footer>
 
 
 
