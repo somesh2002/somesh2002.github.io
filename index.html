@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="CSS/main.css">
 
+
+
 	<style type="text/css">
 	
 	@font-face {font-family: file1 ; src: url('./Fonts/ChargeVectorBold.otf');}
@@ -34,8 +36,8 @@
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link active" href="#about">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Articles</a></li>
-            <li class="nav-item"><a class="nav-link" href="#resources">Interviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#article">Articles</a></li>
+            <li class="nav-item"><a class="nav-link" href="#interview">Interviews</a></li>
             <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
@@ -52,22 +54,22 @@
 </header>
 
 
-<section  class="article_main" style="position:relative;">
+<section id ="#article" class="article_main" style="position:relative;">
 	<img src="./Images/small_long_vector+background.png" alt="Main page" style="width: 100%; height:auto;">
 
 <div class="mt-8 container-fluid" style="position: absolute; top: 0px; margin-top: 140px">
-<div class="" ><p style="font-family: 'file1'; color: white;" class="text-center display-3" > ARTICLES </p></div>
+<div class="wow fadeIn" data-wow-delay=".2s" ><p style="font-family: 'file1'; color: white;" class="text-center display-3" > ARTICLES </p></div>
 
 <div class="container">
 <div class="row pt-4">
-	<div class="col-md-4 col-centered float-cemter">
+	<div class="col-md-4 col-centered float-center wow fadeInLeft " data-wow-delay=".3s">
 		<img src="Images/long1.png">
 	</div>
-	<div class="col-md-4 col-centered">
+	<div class="col-md-4 col-centered wow fadeInUp " data-wow-delay=".3s">
 		
 		<img src="Images/long1.png">
 	</div>
-	<div class="col-md-4 col-centered fadeInLeftBig">
+	<div class="col-md-4 col-centered wow fadeInRightBig" data-wow-delay=".3s">
 		
 		<img src="Images/long1.png">
 	</div>
@@ -79,25 +81,36 @@
 
 </section>
 
-<section  class="article_main " style="position:relative;">
+<section  id ="#interview" class="article_main " style="position:relative;">
 	<img src="./Images/small_long_vector+background.png" alt="Main page" style="width: 100%; height:auto;">
 
 <div class="mt-8 container-fluid" style="position: absolute; top: 0px; margin-top: 140px">
-<div class="" ><p style="font-family: 'file1'; color: white;" class="text-center display-4" > INTERVIEWS </p></div>
+<div class=" wow fadeIn" data-wow-delay=".3s"  ><p style="font-family: 'file1'; color: white;" class="text-center display-4" > INTERVIEWS </p></div>
 
 <div class="container">
 <div class="row">
-	<div class="col-md-4 col-lg-4 col-centered float-center">
+	<div class="col-md-4 col-lg-4 col-centered float-center wow fadeInLeft" data-wow-delay=".3s">
+		<a class=" d-flex justify-content-center"  style="position: relative" href="https://www.w3schools.com/bootstrap5/bootstrap_popover.php">
 		<img src="Images/small_left.png" style="width: 300px;height:auto">
+		<h6 style="font-family: 'file1'; color: white; position: absolute; top:60px" class="">Mechanical Ventilator</h6>
+		</a>
+
 	</div>
-	<div class="col-md-4 col-lg-4 col-centered">
+	<div class="col-md-4 col-lg-4 col-centered float-center wow fadeInUp" data-wow-delay=".3s">
 		
+		<a class=" d-flex justify-content-center"  style="position: relative" href="https://www.w3schools.com/bootstrap5/bootstrap_popover.php">
 		<img src="Images/small_middle.png" style="width: 300px;height:auto">
+		<h6 style="font-family: 'file1'; color: white; position: absolute; top:60px" class="">Mechanical Ventilator</h6>
+		</a>
 	</div>
-	<div class="col-md-4 col-lg-4 col-centered fadeInLeftBig">
+	<div class="col-md-4 col-lg-4 col-centered wow fadeInRight" data-wow-delay=".3s">
 		
+	<a class=" d-flex justify-content-center"  style="position: relative" href="https://www.w3schools.com/bootstrap5/bootstrap_popover.php">
 		<img src="Images/small_right.png" style="width: 300px;height:auto">
-	</div>
+		<h6 style="font-family: 'file1'; color: white; position: absolute; top:60px" class="">Mechanical Ventilator</h6>
+		</a>	</div>
+
+	
 	
 
 </div>
@@ -115,6 +128,15 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+	<script src="./scripts/cell_script.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script> -->
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script>new WOW().init();</script>
+<script>new WOW().init();</script>
 </body>
 </html>
