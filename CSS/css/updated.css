@@ -1,0 +1,22 @@
+.team-heading{
+width: 100%;
+font-size: 30px;
+padding: 10px;
+margin: 10px;
+text-align: center;
+color: white;
+background-color: rgb(0,0,255);
+
+}
+
+.active-heading{
+	display: block;
+}
+
+/*.active{
+	display: inline-flex;
+}
+
+.hidden{
+	display: none;
+}*/
