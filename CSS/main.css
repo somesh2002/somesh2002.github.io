@@ -1,4 +1,4 @@
 .article_main{
-	  background: url("../Images/small_long_vector+background.png") no-repeat center center;
-  	background-size: cover;
+	  background: url("./Images/small_long_vector+background.png") no-repeat center center;
+  		background-size: contain;
 }
