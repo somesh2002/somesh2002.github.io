@@ -1,0 +1,106 @@
+#intro {
+    content: url("../Gifs/navritiEdit_new.gif");
+    width : 100%;
+    height : auto;
+}
+
+#interview{
+    background-image: url("../Images/small_long_vector+background.png");
+   background-size: 100% 100%;
+   padding-top: 10px;
+   padding-bottom: 150px;
+
+}
+
+#articles{
+    background-image: url("../Images/small_long_vector+background.png");
+   background-size: 100% 100%;
+   padding-top: 10px;
+   padding-bottom: 150px;
+
+}
+
+#team{
+    background-image: url("../Images/meetteam.png");
+    background-size: 100% 100%;
+    padding-top: 10px;
+    padding-bottom: 150px;
+
+}
+.meetTheTeam{
+    position : relative; 
+    top: 0px; 
+    right: 0px;
+    margin: 50px 50px; 
+    font-family: 'quantum';
+    font-size:150px
+}
+.teamImage{
+    width : 100%;
+    height : auto;
+
+}
+.page_head{
+    font-size: 60px;
+}
+
+@media (max-width: 800px){
+    
+    #intro {
+        content: url("../Gifs/navritiEdit_new.gif");
+        width : 100%;
+        height : 300px;
+        box-sizing: content-box;
+        border-top: 120px solid black;
+        
+    }
+    
+    #interview{
+        background-image: url("../Images/small_long_vector+background.png");
+       background-size: 100% 100%;
+       padding-top: 10px;
+       padding-bottom: 150px;
+    
+    }
+
+    #articles{
+        background-image: url("../Images/small_long_vector+background.png");
+       background-size: 100% 100%;
+       padding-top: 10px;
+       padding-bottom: 150px;
+    
+    }
+    .meetTheTeam{
+        position: relative;
+
+        left: 0px;
+        font-size: 80px;
+  
+
+    }
+    #team{
+        background-image: url("../Images/meetteam.png");
+        background-size: 100% 100%;
+        padding-top: 10px;
+        background-repeat: no-repeat;
+        
+        padding-bottom: 150px;
+    
+    
+        
+    }
+
+    .team_heading{
+        font-size: 40px;
+        position: relative;
+        left : 0px;
+    }
+    .teamImage{
+        width : 70%;
+        height : auto;
+        
+    }
+    .page_head{
+        font-size: 50px;
+    }
+}
