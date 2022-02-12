@@ -6,7 +6,7 @@
 
 #interview{
     background-image: url("../Images/small_long_vector+background.png");
-   background-size: 100% 100%;
+    background-size: 100% 100%;
    padding-top: 10px;
    padding-bottom: 400px;
 
@@ -23,15 +23,16 @@
 #team{
     background-image: url("../Images/meetteam.png");
     background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     padding-top: 10px;
-    padding-bottom: 150px;
+    padding-bottom: 40px;
+    position: relative;
 
 }
-.meetTheTeam{
-    position : relative; 
-    top: 0px; 
-    right: 0px;
-    margin: 50px 50px; 
+.heading{
+    width: 100%;
+
     font-family: 'quantum';
     font-size:150px
 }
@@ -70,21 +71,23 @@
        padding-bottom: 200px;
     
     }
-    .meetTheTeam{
+    #team .heading{
         position: relative;
 
-        left: 0px;
+
         font-size: 80px;
   
 
     }
     #team{
         background-image: url("../Images/meetteam.png");
-        background-size: 100% 100%;
-        padding-top: 10px;
+
+        background-attachment: fixed;
         background-repeat: no-repeat;
+        padding-top: 10px;
+
         
-        padding-bottom: 150px;
+        padding-bottom: 70px;
     
     
         
@@ -92,15 +95,17 @@
 
     .team_heading{
         font-size: 40px;
-        position: relative;
-        left : 0px;
+        margin: auto;
+
     }
     .teamImage{
-        width : 70%;
+        width : 60%;
         height : auto;
         
     }
     .page_head{
         font-size: 50px;
+        margin: auto;
+        
     }
 }
