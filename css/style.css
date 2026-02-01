@@ -63,10 +63,26 @@ body {
   
   .main {
     margin-left: 260px;
-    padding: 60px 40px;
-    max-width: 900px;
-    margin-right: auto;
+    padding: 40px 120px;
+    max-width: auto;
+    margin-right: 40px;
   }
+
+  .announcements {
+    max-width: 800px;
+    margin: 40px auto 60px auto;
+    text-align: left;
+  }
+  
+  .announcements ul {
+    padding-left: 20px;
+  }
+  
+  .announcements li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+  }
+  
   
   
   .profile {
@@ -74,11 +90,87 @@ body {
   }
   
   .profile img {
-    width: 220px;     /* increased */
-    height: 220px;
+    width: 330px;     /* increased */
+    height: 330px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
+
+  /* ===== Section Titles ===== */
+.section-title {
+    font-size: 2.2rem;
+    color: #8B0000;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  
+  /* ===== Timeline Container ===== */
+  .timeline {
+    border-left: 3px solid #8B0000;
+    padding-left: 30px;
+    max-width: 750px;
+    margin: 0 auto 60px auto;
+    text-align: left;
+  }
+  
+  /* ===== Timeline Item ===== */
+  .timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    background: #8B0000;
+    border-radius: 50%;
+  }
+  
+  /* ===== Item Heading (Education / Job / Project Title) ===== */
+  .item-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  /* ===== Date ===== */
+  .item-date {
+    font-size: 0.95rem;
+    color: #8B0000;
+    margin-bottom: 10px;
+  }
+  
+  /* ===== Body Text ===== */
+  .item-body {
+    font-size: 1.05rem;
+    color: #333;
+  }
+  
+  /* ===== Project Card (inside timeline) ===== */
+  .project-card {
+    background: #f9f9f9;
+    padding: 18px 20px;
+    border-radius: 6px;
+    margin-top: 12px;
+  }
+  
+  /* ===== Project Link ===== */
+  .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #8B0000;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+  }
+  
   
   
   .subtitle {
@@ -105,6 +197,91 @@ body {
     color: #8B0000;
     font-weight: bold;
   }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+  }
+  
+  .info-card {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 6px;
+    text-align: left;
+  }
+  
+  .info-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+  
+  .card-subtitle {
+    font-weight: 500;
+    color: #8B0000;
+    margin-bottom: 10px;
+  }
+  
+
+  .projects-container {
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto 80px auto;
+    padding: 40px 0;
+  }
+  
+  /* Central line */
+  .projects-container {
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto 80px auto;
+    padding: 40px 0;
+  }
+  
+  /* Central vertical line (BEHIND) */
+  .projects-container::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #8B0000;
+    transform: translateX(-50%);
+    z-index: 1;   /* 👈 behind boxes */
+  }
+  
+  /* Project box (ON TOP) */
+  .project-box {
+    position: relative;   /* required for z-index */
+    z-index: 2;           /* 👈 above the line */
+    background: #ffffff;
+    border: 1px solid #eee;
+    padding: 30px;
+    width: 70%;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    border-radius: 6px;
+  }
+  
+  .project-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+  
+  .project-box a {
+    color: #8B0000;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .project-box a:hover {
+    text-decoration: underline;
+  }
+  
+  
   
   .btn {
     display: inline-block;
@@ -114,6 +291,23 @@ body {
     color: white;
     text-decoration: none;
   }
+
+  /* .site-footer {
+    margin-top: 80px;
+    padding: 25px 10px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #666;
+    background-color: #f9f9f9;
+  }
+  
+  .site-footer p {
+    margin: 10px;
+  } */
+  
+
+  
   
   @media (max-width: 768px) {
 
@@ -138,6 +332,29 @@ body {
       width: 180px;
       height: 180px;
     }
+    .projects-container::before {
+        left: 20px;
+      }
+    
+      .project-box {
+        width: calc(100% - 40px);
+        margin-left: 40px;
+      }
+
+      .site-footer {
+        margin-top: 80px;
+        padding: 25px 10px;
+        border-top: 1px solid #eee;
+        text-align: center;
+        font-size: 0.95rem;
+        color: #666;
+      }
+      
+      .site-footer p {
+        margin: 0;
+      }
+      
+
+      
   }
-  
   
