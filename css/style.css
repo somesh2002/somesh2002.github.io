@@ -224,18 +224,10 @@ body {
     margin-bottom: 10px;
   }
   
-
-  .projects-container {
-    position: relative;
-    max-width: 850px;
-    margin: 0 auto 80px auto;
-    padding: 40px 0;
-  }
-  
   /* Central line */
   .projects-container {
     position: relative;
-    max-width: 850px;
+    max-width: 80%;
     margin: 0 auto 80px auto;
     padding: 40px 0;
   }
@@ -259,8 +251,8 @@ body {
     z-index: 2;           /* 👈 above the line */
     background: #ffffff;
     border: 1px solid #eee;
-    padding: 30px;
-    width: 70%;
+    padding: 20px;
+    width: 90%;
     margin: 0 auto 50px auto;
     text-align: left;
     border-radius: 6px;
@@ -278,6 +270,37 @@ body {
   }
   
   .project-box a:hover {
+    text-decoration: underline;
+  }
+
+  .research-text {
+    max-width: 90%;
+    margin: 0 auto 25px auto;
+    font-size: 18px;
+  }
+
+  .box {
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    padding: 30px;
+    background-color: #fafafa;
+    border-left: 6px solid #8B0000;
+    text-align: center;
+  }
+  
+  .box p {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+  
+  /* Links inside boxes */
+  .box a {
+    color: #8B0000;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .box a:hover {
     text-decoration: underline;
   }
   
